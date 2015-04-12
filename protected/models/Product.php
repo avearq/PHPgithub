@@ -34,7 +34,6 @@ class Product extends CActiveRecord
 			array('ProPrice', 'numerical'),
 			array('ProName', 'length', 'max'=>256),
 			array('ProDesc, ProImage', 'length', 'max'=>1024),
-			//array('image', 'file', 'types'=>'jpg, gif, png'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ProID, ProName, ProDesc, ProPrice, ProImage, CateID', 'safe', 'on'=>'search'),
@@ -106,7 +105,9 @@ class Product extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
 	public function customFindAll(){
 		return new CActiveDataProvider($this);
+	
 	}
 }

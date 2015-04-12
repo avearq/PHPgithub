@@ -70,9 +70,16 @@
 		}
 	?>
 
+	<!--
 	<div class="row">
 		<?php echo $form->labelEx($model,'CateID'); ?>
-		<?php echo $form->dropDownList($model,'CateID',CHtml::ListData(Category::model()->findAll(), 'CateID', 'CateName')); ?>
+		<?php echo $form->textField($model,'CateID'); ?>
+		<?php echo $form->error($model,'CateID'); ?>
+	</div>
+	-->
+	<div class="row">
+		<?php echo $form->labelEx($model,'CateID'); ?>
+		<?php echo $form->dropDownList($model,'CateID', CHtml::ListData(Category::model()->findAll(), 'CateID', 'CateName')); ?>
 		<?php echo $form->error($model,'CateID'); ?>
 	</div>
 

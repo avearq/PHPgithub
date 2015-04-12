@@ -11,10 +11,8 @@ if(Yii::app()->session['CusType']==1){
 	$this->menu=array(
 		array('label'=>'List Customer', 'url'=>array('index')),
 		array('label'=>'Manage Customer', 'url'=>array('admin')),
-);
-
+	);
 }
-
 ?>
 
 <h1>Create Customer</h1>

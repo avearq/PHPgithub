@@ -1,20 +1,4 @@
-2015/03/08 14:23:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/".' in C:\AppServ\www\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/')
-#1 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/PreOderShopping/index.php?r=gii/
----
-2015/03/08 14:23:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/".' in C:\AppServ\www\yii\framework\web\CWebApplication.php:286
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/')
-#1 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/PreOderShopping/index.php?r=gii/
----
-2015/03/08 15:27:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
+2015/03/08 16:03:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
 Stack trace:
 #0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
 #1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
@@ -26,46 +10,12 @@ Stack trace:
 #7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
 #8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customer/admin')
 #9 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
+#10 C:\AppServ\www\PreOrderShopping\index.php(13): CApplication->run()
 #11 {main}
-REQUEST_URI=/PreOderShopping/index.php/customer/admin
-HTTP_REFERER=http://localhost:89/PreOderShopping/index.php/site/login
+REQUEST_URI=/PreOrderShopping/index.php/customer/admin
+HTTP_REFERER=http://localhost:8089/PreOrderShopping/index.php/customer
 ---
-2015/03/08 15:29:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
-#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
-#2 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#5 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
-#6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
-#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('customer/admin')
-#9 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#11 {main}
-REQUEST_URI=/PreOderShopping/index.php/customer/admin
-HTTP_REFERER=http://localhost:89/PreOderShopping/index.php/customer/index
----
-2015/03/29 15:23:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
-#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
-#2 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#5 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
-#6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
-#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Product/admin')
-#9 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#11 {main}
-REQUEST_URI=/PreOderShopping/index.php/Product/admin
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php
----
-2015/03/29 15:23:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
+2015/03/29 15:22:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
 Stack trace:
 #0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
 #1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
@@ -76,13 +26,33 @@ Stack trace:
 #6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
 #7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
 #8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Category/admin')
-#9 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
+#9 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\AppServ\www\PreOrderShopping\index.php(13): CApplication->run()
 #11 {main}
-REQUEST_URI=/PreOderShopping/index.php/Category/admin
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
+REQUEST_URI=/preordershopping/index.php/Category/admin
+HTTP_REFERER=http://localhost:8089/preordershopping/index.php
 ---
-2015/03/29 15:28:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
+2015/03/29 15:24:44 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.user_type" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\AppServ\www\PreOrderShopping\protected\components\UserIdentity.php(45): CComponent->__set('user_type', 'admin')
+#1 C:\AppServ\www\PreOrderShopping\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\AppServ\www\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\AppServ\www\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\AppServ\www\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\AppServ\www\PreOrderShopping\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\AppServ\www\PreOrderShopping\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/preordershopping/index.php/site/login
+HTTP_REFERER=http://localhost:8089/preordershopping/index.php/site/login
+---
+2015/03/29 15:26:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
 Stack trace:
 #0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
 #1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
@@ -92,14 +62,14 @@ Stack trace:
 #5 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
 #6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
 #7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
-#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Product/admin')
-#9 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Category/admin')
+#9 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\AppServ\www\PreOrderShopping\index.php(13): CApplication->run()
 #11 {main}
-REQUEST_URI=/PreOderShopping/index.php/Product/admin
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Customer/admin
+REQUEST_URI=/preordershopping/index.php/Category/admin
+HTTP_REFERER=http://localhost:8089/preordershopping/index.php/Product/admin
 ---
-2015/03/29 15:42:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
+2015/03/29 15:26:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
 Stack trace:
 #0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
 #1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
@@ -109,43 +79,624 @@ Stack trace:
 #5 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
 #6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
 #7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
-#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Product/admin')
-#9 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Category/admin')
+#9 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\AppServ\www\PreOrderShopping\index.php(13): CApplication->run()
 #11 {main}
-REQUEST_URI=/PreOderShopping/index.php/Product/admin
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php
+REQUEST_URI=/preordershopping/index.php/Category/admin
+HTTP_REFERER=http://localhost:8089/preordershopping/index.php/Customer/admin
 ---
-2015/03/29 15:48:55 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "activeFileField".' in C:\AppServ\www\yii\framework\base\CComponent.php:266
+2015/04/02 14:49:50 [error] [exception.CException] exception 'CException' with message 'Property "Product.restuarantname" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
 Stack trace:
-#0 [internal function]: CComponent->__call('activeFileField', Array)
-#1 C:\AppServ\www\PreOderShopping\protected\views\product\_form.php(42): CActiveForm->activeFileField(Object(Product), 'ProImage', Array)
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('restuarantname')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(25): CActiveRecord->__get('restuarantname')
 #2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
 #3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
 #4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
-#5 C:\AppServ\www\PreOderShopping\protected\views\product\create.php(18): CController->renderPartial('_form', Array)
-#6 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#7 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
-#8 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
-#9 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
-#10 C:\AppServ\www\PreOderShopping\protected\controllers\ProductController.php(79): CController->render('create', Array)
-#11 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): ProductController->actionCreate()
-#12 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#13 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
-#14 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
-#15 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#16 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#17 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#18 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
-#19 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
-#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Product/create')
-#22 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#23 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#24 {main}
-REQUEST_URI=/PreOderShopping/index.php/Product/create
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(49): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(32): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Customer/create
 ---
-2015/03/29 16:04:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
+2015/04/02 14:54:22 [error] [exception.CException] exception 'CException' with message 'Property "Product.name" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('name')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(49): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(32): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Customer/create
+---
+2015/04/02 17:48:31 [error] [php] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument (C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\AppServ\www\140-390-php-fw\index.php(13): CWebApplication->run()
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=5&ProductName=Seiko+Astron+SSE033&ProductPrice=72000
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (133)
+in C:\AppServ\www\140-390-php-fw\index.php (13)
+2015/04/02 17:51:20 [error] [php] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument (C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\AppServ\www\140-390-php-fw\index.php(13): CWebApplication->run()
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=6&ProductName=Seiko+Astron+SAST015&ProductPrice=106000
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (133)
+in C:\AppServ\www\140-390-php-fw\index.php (13)
+2015/04/02 17:51:27 [error] [php] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument (C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\AppServ\www\140-390-php-fw\index.php(13): CWebApplication->run()
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=5&ProductName=Seiko+Astron+SSE033&ProductPrice=72000
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (133)
+in C:\AppServ\www\140-390-php-fw\index.php (13)
+2015/04/02 17:51:59 [error] [php] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument (C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php:133)
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\AppServ\www\140-390-php-fw\index.php(13): CWebApplication->run()
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=6&ProductName=Seiko+Astron+SAST015&ProductPrice=106000
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (133)
+in C:\AppServ\www\140-390-php-fw\index.php (13)
+2015/04/03 09:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "RemoveAll".' in C:\AppServ\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('RemoveAll')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('RemoveAll')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/RemoveAll')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/140-390-php-fw/index.php/Site/RemoveAll
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Site/AddToCart?ProductId=5&ProductName=Seiko+Astron+SSE033&ProductPrice=72000
+---
+2015/04/03 09:59:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "RemoveAll".' in C:\AppServ\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('RemoveAll')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('RemoveAll')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/RemoveAll')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/140-390-php-fw/index.php/Site/RemoveAll
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Site/AddToCart?ProductId=5&ProductName=Seiko+Astron+SSE033&ProductPrice=72000
+---
+2015/04/03 10:48:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.CateID' in 'on clause'. The SQL statement executed was: SELECT `t`.`ProID`, `t`.`ProName`, `t`.`ProDesc`, `t`.`ProPrice`, `t`.`ProImage`, `t`.`CateID` FROM `product` `t` INNER JOIN category ON(category.CateID=product.CateID).
+in C:\AppServ\www\140-390-php-fw\protected\models\Product.php (114)
+in C:\AppServ\www\140-390-php-fw\protected\views\site\index.php (47)
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (34)
+2015/04/03 10:48:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.CateID' in 'on clause'. The SQL statement executed was: SELECT `t`.`ProID`, `t`.`ProName`, `t`.`ProDesc`, `t`.`ProPrice`, `t`.`ProImage`, `t`.`CateID` FROM `product` `t` INNER JOIN category ON(category.CateID=product.CateID)' in C:\AppServ\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\AppServ\www\140-390-php-fw\protected\models\Product.php(114): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(47): Product->customFindAll()
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#8 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#10 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#16 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 10:50:11 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(50): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 11:21:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'CateID' in field list is ambiguous. The SQL statement executed was: SELECT ProID, ProName, ProDesc, ProPrice, ProImage, CateID FROM `product` `t` INNER JOIN category AS c ON(c.CateID=t.CateID) LIMIT 10.
+in C:\AppServ\www\140-390-php-fw\protected\views\site\index.php (50)
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (34)
+in C:\AppServ\www\140-390-php-fw\index.php (13)
+2015/04/03 11:21:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'CateID' in field list is ambiguous. The SQL statement executed was: SELECT ProID, ProName, ProDesc, ProPrice, ProImage, CateID FROM `product` `t` INNER JOIN category AS c ON(c.CateID=t.CateID) LIMIT 10' in C:\AppServ\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\AppServ\www\yii\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\AppServ\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#5 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#6 C:\AppServ\www\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#7 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.ECo...', Array)
+#9 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(50): CBaseController->widget('zii.widgets.ECo...', Array)
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#11 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#12 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#13 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#14 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#15 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#21 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 11:31:39 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(50): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 11:44:00 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 12:03:42 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "category" is not defined in active record class "Product".' in C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php(298): CActiveFinder->buildJoinTree(Object(CJoinElement), 'category', Array)
+#1 C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Product), Array)
+#3 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(1604): CActiveRecord->getActiveFinder(Array)
+#4 C:\AppServ\www\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\AppServ\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\AppServ\www\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 C:\AppServ\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#9 C:\AppServ\www\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#11 C:\AppServ\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#17 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#18 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#23 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 12:07:33 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "category" is not defined in active record class "Product".' in C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php(298): CActiveFinder->buildJoinTree(Object(CJoinElement), 'category', Array)
+#1 C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Product), Array)
+#3 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(1604): CActiveRecord->getActiveFinder(Array)
+#4 C:\AppServ\www\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\AppServ\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\AppServ\www\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 C:\AppServ\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#9 C:\AppServ\www\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#11 C:\AppServ\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#17 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#18 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#23 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#24 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 12:07:59 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 12:09:11 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 12:12:25 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 12:19:48 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 12:24:14 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(34): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php
+---
+2015/04/03 12:33:07 [error] [php] Invalid argument supplied for foreach() (C:\AppServ\www\yii\framework\db\schema\CDbCriteria.php:159)
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CActiveDataProvider.php(96): CActiveDataProvider->__set()
+#1 C:\AppServ\www\140-390-php-fw\protected\models\Product.php(126): CActiveDataProvider->__construct()
+#2 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(48): Product->customFindAll()
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\AppServ\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#6 C:\AppServ\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#7 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(161): SiteController->render()
+#8 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionAddToCart()
+#9 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#11 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#12 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\AppServ\www\140-390-php-fw\index.php(13): CWebApplication->run()
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=6&ProductName=Seiko+Astron+SAST015&ProductPrice=106000
+in C:\AppServ\www\140-390-php-fw\protected\models\Product.php (126)
+in C:\AppServ\www\140-390-php-fw\protected\views\site\index.php (48)
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (161)
+2015/04/03 12:34:37 [error] [php] Object of class Category could not be converted to string (C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php:22)
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): SiteController->renderPartial()
+#2 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#3 unknown(0): EColumnListView->renderSection()
+#4 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#5 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): EColumnListView->renderContent()
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(173): EColumnListView->run()
+#7 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): SiteController->widget()
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#10 C:\AppServ\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#11 C:\AppServ\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#12 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(161): SiteController->render()
+#13 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionAddToCart()
+#14 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#16 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#17 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#18 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\AppServ\www\140-390-php-fw\index.php(13): CWebApplication->run()
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=6&ProductName=Seiko+Astron+SAST015&ProductPrice=106000
+in C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php (22)
+in C:\AppServ\www\140-390-php-fw\protected\views\site\index.php (51)
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (161)
+2015/04/03 12:35:03 [error] [exception.CException] exception 'CException' with message 'Property "Product.CateName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('CateName')
+#1 C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php(22): CActiveRecord->__get('CateName')
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#4 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): CController->renderPartial('_view', Array)
+#6 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#9 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): CBaseController->widget('zii.widgets.ECo...', Array)
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#13 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#14 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#15 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#16 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(161): CController->render('index')
+#17 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionAddToCart()
+#18 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('AddToCart')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AddToCart')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=6&ProductName=Seiko+Astron+SAST015&ProductPrice=106000
+---
+2015/04/03 12:35:12 [error] [php] Object of class Category could not be converted to string (C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php:22)
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\AppServ\www\yii\framework\zii\widgets\EColumnListView.php(61): SiteController->renderPartial()
+#2 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): EColumnListView->renderItems()
+#3 unknown(0): EColumnListView->renderSection()
+#4 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#5 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): EColumnListView->renderContent()
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(173): EColumnListView->run()
+#7 C:\AppServ\www\140-390-php-fw\protected\views\site\index.php(51): SiteController->widget()
+#8 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#10 C:\AppServ\www\yii\framework\web\CController.php(869): SiteController->renderFile()
+#11 C:\AppServ\www\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#12 C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php(161): SiteController->render()
+#13 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionAddToCart()
+#14 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#16 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#17 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#18 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\AppServ\www\140-390-php-fw\index.php(13): CWebApplication->run()
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=6&ProductName=Seiko+Astron+SAST015&ProductPrice=106000
+in C:\AppServ\www\140-390-php-fw\protected\views\site\_view.php (22)
+in C:\AppServ\www\140-390-php-fw\protected\views\site\index.php (51)
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (161)
+2015/04/12 09:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "RemoveAll".' in C:\AppServ\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('RemoveAll')
+#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('RemoveAll')
+#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/RemoveAll')
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/140-390-php-fw/index.php/Site/RemoveAll
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Order/Create
+---
+2015/04/12 10:06:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
 Stack trace:
 #0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
 #1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
@@ -155,278 +706,262 @@ Stack trace:
 #5 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
 #6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
 #7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
-#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Product/admin')
-#9 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#11 {main}
-REQUEST_URI=/PreOderShopping/index.php/Product/admin
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/product/2
----
-2015/03/29 16:04:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
-#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
-#2 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#5 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
-#6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
-#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Product/admin')
-#9 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#11 {main}
-REQUEST_URI=/PreOderShopping/index.php/Product/admin
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 14:27:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
-#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
-#2 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#5 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
-#6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
-#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Category/admin')
-#9 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#11 {main}
-REQUEST_URI=/PreOderShopping/index.php/Category/admin
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php
----
-2015/04/05 14:53:00 [error] [exception.CException] exception 'CException' with message 'Alias "zii.wid.EColumnListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\AppServ\www\yii\framework\YiiBase.php:323
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.wid.EColumn...', true)
-#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.wid.EColumn...', Array)
-#2 C:\AppServ\www\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.wid.EColumn...', Array)
-#3 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(35): CBaseController->widget('zii.wid.EColumn...', Array)
-#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
-#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
-#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
-#8 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(32): CController->render('index')
-#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
-#10 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#11 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#12 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
-#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
-#15 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#16 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#17 {main}
-REQUEST_URI=/PreOderShopping/index.php
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 14:53:46 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.EColumnListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\AppServ\www\yii\framework\YiiBase.php:323
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.ECo...', true)
-#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.ECo...', Array)
-#2 C:\AppServ\www\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.ECo...', Array)
-#3 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.ECo...', Array)
-#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
-#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
-#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
-#8 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(32): CController->render('index')
-#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
-#10 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#11 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#12 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
-#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
-#15 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#16 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#17 {main}
-REQUEST_URI=/PreOderShopping/index.php
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 14:54:28 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.EColumnListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\AppServ\www\yii\framework\YiiBase.php:323
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.ECo...', true)
-#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.ECo...', Array)
-#2 C:\AppServ\www\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.ECo...', Array)
-#3 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.ECo...', Array)
-#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
-#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
-#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
-#8 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(32): CController->render('index')
-#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
-#10 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#11 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#12 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
-#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
-#15 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#16 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#17 {main}
-REQUEST_URI=/PreOderShopping/index.php
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 14:58:22 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.EColumnListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\AppServ\www\yii\framework\YiiBase.php:323
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.ECo...', true)
-#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.ECo...', Array)
-#2 C:\AppServ\www\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.ECo...', Array)
-#3 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.ECo...', Array)
-#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
-#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
-#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
-#8 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(32): CController->render('index')
-#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
-#10 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#11 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#12 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
-#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
-#15 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#16 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#17 {main}
-REQUEST_URI=/PreOderShopping/index.php
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 14:58:23 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.EColumnListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\AppServ\www\yii\framework\YiiBase.php:323
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.ECo...', true)
-#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.ECo...', Array)
-#2 C:\AppServ\www\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.ECo...', Array)
-#3 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.ECo...', Array)
-#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
-#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
-#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
-#8 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(32): CController->render('index')
-#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
-#10 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#11 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#12 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
-#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
-#15 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#16 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#17 {main}
-REQUEST_URI=/PreOderShopping/index.php
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 15:00:38 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.EColumnListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\AppServ\www\yii\framework\YiiBase.php:323
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.ECo...', true)
-#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.ECo...', Array)
-#2 C:\AppServ\www\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.ECo...', Array)
-#3 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.ECo...', Array)
-#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
-#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
-#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
-#8 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(32): CController->render('index')
-#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
-#10 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#11 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#12 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
-#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
-#15 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#16 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#17 {main}
-REQUEST_URI=/PreOderShopping/index.php
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 15:00:59 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.EColumnListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\AppServ\www\yii\framework\YiiBase.php:323
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.ECo...', true)
-#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.ECo...', Array)
-#2 C:\AppServ\www\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.ECo...', Array)
-#3 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.ECo...', Array)
-#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
-#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
-#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
-#8 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(32): CController->render('index')
-#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
-#10 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#11 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#12 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
-#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
-#15 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#16 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#17 {main}
-REQUEST_URI=/PreOderShopping/index.php
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 15:01:32 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.EColumnListView" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\AppServ\www\yii\framework\YiiBase.php:323
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.ECo...', true)
-#1 C:\AppServ\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.ECo...', Array)
-#2 C:\AppServ\www\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.ECo...', Array)
-#3 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.ECo...', Array)
-#4 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
-#5 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
-#6 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
-#7 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
-#8 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(32): CController->render('index')
-#9 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
-#10 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#11 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#12 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
-#14 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
-#15 C:\AppServ\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#16 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#17 {main}
-REQUEST_URI=/PreOderShopping/index.php
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
----
-2015/04/05 15:20:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php:182
-Stack trace:
-#0 C:\AppServ\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
-#1 C:\AppServ\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
-#2 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
-#3 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
-#4 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
-#5 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
-#6 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#7 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
-#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Category/admin')
+#8 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('order/admin')
 #9 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#10 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
+#10 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
 #11 {main}
-REQUEST_URI=/PreOderShopping/index.php/Category/admin
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Product/admin
+REQUEST_URI=/140-390-php-fw/index.php/order/admin
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Order/Create
 ---
-2015/04/05 15:46:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AddToCart".' in C:\AppServ\www\yii\framework\web\CController.php:483
+2015/04/12 10:12:31 [error] [php] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument (C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php:132)
 Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('AddToCart')
-#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('AddToCart')
-#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/AddToCart')
-#3 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#4 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/PreOderShopping/index.php/Site/AddToCart?ProductId=9&ProductName=Seiko+Astron+SSE033&ProductPrice=72000
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php
+#0 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\AppServ\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\AppServ\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\AppServ\www\140-390-php-fw\index.php(13): CWebApplication->run()
+REQUEST_URI=/140-390-php-fw/index.php/Site/AddToCart?ProductId=5&ProductName=Seiko+Astron+SSE033&ProductPrice=72000
+in C:\AppServ\www\140-390-php-fw\protected\controllers\SiteController.php (132)
+in C:\AppServ\www\140-390-php-fw\index.php (13)
+2015/04/12 12:01:25 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php:412
+Stack trace:
+#0 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(383): CGridView->createDataColumn('$data->Detail_I...')
+#1 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#2 C:\AppServ\www\yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\AppServ\www\140-390-php-fw\protected\views\order\view.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#6 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#7 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#8 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#9 C:\AppServ\www\140-390-php-fw\protected\controllers\OrderController.php(56): CController->render('view', Array)
+#10 [internal function]: OrderController->actionView('7')
+#11 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(OrderController), Array)
+#12 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderController), Object(ReflectionMethod), Array)
+#13 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#22 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#23 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/140-390-php-fw/index.php/order/7
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Order/admin
 ---
-2015/04/12 15:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "RemoveFromCart".' in C:\AppServ\www\yii\framework\web\CController.php:483
+2015/04/12 12:10:32 [error] [exception.CException] exception 'CException' with message 'Property "Order.ProName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
 Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('RemoveFromCart')
-#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('RemoveFromCart')
-#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/RemoveFrom...')
-#3 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#4 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/PreOderShopping/index.php/Site/RemoveFromCart?LineId=5
-HTTP_REFERER=http://localhost:8089/PreOderShopping/
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ProName')
+#1 C:\AppServ\www\yii\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('ProName')
+#2 C:\AppServ\www\yii\framework\base\CComponent.php(612): eval()
+#3 C:\AppServ\www\yii\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->OrderRel...', Array)
+#4 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(OrderDetail))
+#5 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 C:\AppServ\www\140-390-php-fw\protected\views\order\view.php(76): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#15 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#17 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#18 C:\AppServ\www\140-390-php-fw\protected\controllers\OrderController.php(56): CController->render('view', Array)
+#19 [internal function]: OrderController->actionView('7')
+#20 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(OrderController), Array)
+#21 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderController), Object(ReflectionMethod), Array)
+#22 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#31 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#32 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/140-390-php-fw/index.php/order/7
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Order/admin
 ---
-2015/04/12 15:01:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "RemoveFromCart".' in C:\AppServ\www\yii\framework\web\CController.php:483
+2015/04/12 12:16:15 [error] [exception.CException] exception 'CException' with message 'Property "Order.ProName" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
 Stack trace:
-#0 C:\AppServ\www\yii\framework\web\CController.php(270): CController->missingAction('RemoveFromCart')
-#1 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('RemoveFromCart')
-#2 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/RemoveFrom...')
-#3 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#4 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/PreOderShopping/index.php/Site/RemoveFromCart?LineId=5
-HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Site/RemoveFromCart?LineId=5
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ProName')
+#1 C:\AppServ\www\yii\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('ProName')
+#2 C:\AppServ\www\yii\framework\base\CComponent.php(612): eval()
+#3 C:\AppServ\www\yii\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->OrderRel...', Array)
+#4 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(OrderDetail))
+#5 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 C:\AppServ\www\140-390-php-fw\protected\views\order\view.php(76): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#15 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#16 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#17 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#18 C:\AppServ\www\140-390-php-fw\protected\controllers\OrderController.php(56): CController->render('view', Array)
+#19 [internal function]: OrderController->actionView('8')
+#20 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(OrderController), Array)
+#21 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderController), Object(ReflectionMethod), Array)
+#22 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#31 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#32 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/140-390-php-fw/index.php/order/8
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Order/admin
+---
+2015/04/12 12:17:31 [error] [exception.CException] exception 'CException' with message 'Property "OrderDetail.ProID" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ProID')
+#1 C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php(656): CActiveRecord->__get('ProID')
+#2 C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php(500): CJoinElement->applyLazyCondition(Object(CJoinQuery), Object(OrderDetail))
+#3 C:\AppServ\www\yii\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(OrderDetail))
+#4 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(OrderDetail))
+#5 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('OrderRelation')
+#6 C:\AppServ\www\yii\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('OrderRelation')
+#7 C:\AppServ\www\yii\framework\base\CComponent.php(612): eval()
+#8 C:\AppServ\www\yii\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->OrderRel...', Array)
+#9 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(OrderDetail))
+#10 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#11 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#12 C:\AppServ\www\yii\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#13 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#14 [internal function]: CBaseListView->renderSection(Array)
+#15 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#16 C:\AppServ\www\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#17 C:\AppServ\www\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#18 C:\AppServ\www\140-390-php-fw\protected\views\order\view.php(76): CBaseController->widget('zii.widgets.gri...', Array)
+#19 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#20 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#21 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#22 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#23 C:\AppServ\www\140-390-php-fw\protected\controllers\OrderController.php(56): CController->render('view', Array)
+#24 [internal function]: OrderController->actionView('8')
+#25 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(OrderController), Array)
+#26 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderController), Object(ReflectionMethod), Array)
+#27 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#28 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#29 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#30 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#31 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#32 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#33 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#34 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#35 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#36 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#37 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#38 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#39 {main}
+REQUEST_URI=/140-390-php-fw/index.php/order/8
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Order/admin
+---
+2015/04/12 12:20:32 [error] [exception.CException] exception 'CException' with message 'Property "OrderDetail.price" is not defined.' in C:\AppServ\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('price')
+#1 C:\AppServ\www\140-390-php-fw\protected\models\OrderDetail.php(112): CActiveRecord->__get('price')
+#2 C:\AppServ\www\140-390-php-fw\protected\views\order\view.php(71): OrderDetail->fetchTotalPrice(Array)
+#3 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#4 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', Array, true)
+#5 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', Array, true)
+#6 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#7 C:\AppServ\www\140-390-php-fw\protected\controllers\OrderController.php(56): CController->render('view', Array)
+#8 [internal function]: OrderController->actionView('8')
+#9 C:\AppServ\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(OrderController), Array)
+#10 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderController), Object(ReflectionMethod), Array)
+#11 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\AppServ\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\AppServ\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\AppServ\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\AppServ\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\AppServ\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#20 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#21 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\AppServ\www\140-390-php-fw\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/140-390-php-fw/index.php/order/8
+HTTP_REFERER=http://localhost/140-390-php-fw/index.php/Order/admin
+---
+2015/04/12 15:11:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database '140_390_php_fw'' in C:\AppServ\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\AppServ\www\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\AppServ\www\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Product))
+#7 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(45): CActiveRecord->__construct()
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#12 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#13 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(185): CController->render('index')
+#14 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRemoveFromCart()
+#15 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('RemoveFromCart')
+#19 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/RemoveFrom...')
+#20 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PreOderShopping/index.php/Site/RemoveFromCart?LineId=4
+HTTP_REFERER=http://localhost:8089/PreOderShopping/index.php/Site/AddToCart?ProductId=10&ProductName=Seiko+Astron+SAST015&ProductPrice=106000
+---
+2015/04/12 15:11:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database '140_390_php_fw'' in C:\AppServ\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\AppServ\www\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\AppServ\www\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\AppServ\www\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\AppServ\www\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Product))
+#7 C:\AppServ\www\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 C:\AppServ\www\PreOderShopping\protected\views\site\index.php(45): CActiveRecord->__construct()
+#9 C:\AppServ\www\yii\framework\web\CBaseController.php(126): require('C:\AppServ\www\...')
+#10 C:\AppServ\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\AppServ\www\...', NULL, true)
+#11 C:\AppServ\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\AppServ\www\...', NULL, true)
+#12 C:\AppServ\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#13 C:\AppServ\www\PreOderShopping\protected\controllers\SiteController.php(34): CController->render('index')
+#14 C:\AppServ\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\AppServ\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\AppServ\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\AppServ\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\AppServ\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\AppServ\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\AppServ\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\AppServ\www\PreOderShopping\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/PreOderShopping/
 ---

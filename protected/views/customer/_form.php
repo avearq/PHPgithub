@@ -48,6 +48,7 @@
 		<?php echo $form->textField($model,'CusPassword',array('size'=>60,'maxlength'=>64)); ?>
 		<?php echo $form->error($model,'CusPassword'); ?>
 	</div>
+
 	<!--
 	<div class="row">
 		<?php echo $form->labelEx($model,'CusType'); ?>
@@ -55,6 +56,7 @@
 		<?php echo $form->error($model,'CusType'); ?>
 	</div>
 	-->
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

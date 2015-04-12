@@ -3,6 +3,7 @@
 class SiteController extends Controller
 {
 	public $layout='//layouts/column2';
+	
 	/**
 	 * Declares class-based actions.
 	 */
@@ -107,56 +108,59 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
-
-	public function actionAddToCart(){
+	
+	public function actionAddToCart()
+	{
 		$productID = Yii::app()->getRequest()->getQuery('ProductId');
 		$productName = Yii::app()->getRequest()->getQuery('ProductName');
 		$productPrice = Yii::app()->getRequest()->getQuery('ProductPrice');
-		$productQty = Yii::app()->request->getPost('NoOfProduct_'.$productID);
+		$productQty = Yii::app()->request->getPost('NoOfProduct_' . $productID);
 		
 		$session = Yii::app()->session;
-
-		// New Shopping Cart
-		if(!isset($session['intLine'])){
+		
+		if(!isset($session['intLine']))
+		{
 			$session['intLine'] = 1;
-			$session['productID'] = array($productID);
-			$session['productName'] = array($productName);
-			$session['productPrice'] = array($productPrice);
-			$session['productQty'] = array($productQty);
-		}else{
-			// Exist Shopping Cart
-			$arrProductID = $session['productID'];
+			$session["productID"] = array($productID);
+			$session["productName"] = array($productName);
+			$session["productPrice"] = array($productPrice);
+			$session["productQty"] = array($productQty);
+		}
+		else
+		{
+			$arrProductID = $session["productID"];
 			$key = array_search($productID, $arrProductID);
-			if($key != ''){
-				//Exist Product
-				$arrProductQty = $session['productQty'];
+			if((string)$key != "")
+			{
+				$arrProductQty =$session["productQty"];
 				$arrProductQty[$key] = $arrProductQty[$key] + $productQty;
-				$session['productQty'] = $arrProductQty;
-			}else{
-				// New Product
-				$session['intLine'] = $session['intLine']+1;
+				$session["productQty"] = $arrProductQty;
+			}
+			else
+			{
+				$session['intLine'] = $session['intLine'] + 1;
 				$intNewLine = $session['intLine'];
-
-				$arrProductID = $session['productID'];
-				$arrProductName = $session['productName'];
-				$arrProductPrice = $session['productPrice'];
-				$arrProductQty = $session['productQty'];
-			
+				
+				$arrProductID = $session["productID"];
+				$arrProductName = $session["productName"];
+				$arrProductPrice = $session["productPrice"] ;
+				$arrProductQty= $session["productQty"];
+				
 				$arrProductID[$intNewLine] = $productID;
 				$arrProductName[$intNewLine] = $productName;
 				$arrProductPrice[$intNewLine] = $productPrice;
 				$arrProductQty[$intNewLine] = $productQty;
-
-				$session['productID'] = $arrProductID;
-				$session['productName'] = $arrProductName;
-				$session['productPrice'] = $arrProductPrice;
-				$session['productQty'] = $arrProductQty;
+				
+				$session["productID"] = $arrProductID;
+				$session["productName"] = $arrProductName;
+				$session["productPrice"] = $arrProductPrice;
+				$session["productQty"] = $arrProductQty;
 			}
 		}
-
+		
 		$this->render('index');
 	}
-
+	
 	public function actionRemoveFromCart()
 	{
 		$session = Yii::app()->session;
@@ -178,6 +182,17 @@ class SiteController extends Controller
 		$session["productPrice"] = $arrProductPrice;
 		$session["productQty"] = $arrProductQty;
 	
+		$this->render('index');
+	}
+	
+	public function actionRemoveAllFromCart()
+	{
+		Yii::app()->session->remove("intLine");
+		Yii::app()->session->remove("productID");
+		Yii::app()->session->remove("productName");
+		Yii::app()->session->remove("productPrice");
+		Yii::app()->session->remove("productQty");
+		
 		$this->render('index');
 	}
 }

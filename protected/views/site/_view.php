@@ -19,11 +19,7 @@
 	<table style="width: 380px;">
 		<tr>
 			<td colspan="2">
-				<strong><?php
-				
-				//CHtml::encode($data->ProName);
-
-				echo CHtml::encode($data->CategoryRelation->CateName)." : ".CHtml::encode($data->ProName); ?></strong>
+				<strong><?php echo CHtml::encode($data->CategoryRelation->CateName)." : ".CHtml::encode($data->ProName); ?></strong>
 			</td>
 		</tr>
 		<tr>

@@ -15,7 +15,7 @@ class UserIdentity extends CUserIdentity
 	 * against some persistent user identity storage (e.g. database).
 	 * @return boolean whether authentication succeeds.
 	 */
-	/*
+	 /*
 	public function authenticate()
 	{
 		$users=array(
@@ -34,18 +34,15 @@ class UserIdentity extends CUserIdentity
 	*/
 	public function authenticate()
 	{
-		$customer= Customer::model()->find('CusEmail = ?',
-			array($this->username));
-		if($customer === null){
+		$customer=Customer::model()->find('CusEmail=?', array($this->username));
+		if($customer===null){
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
 		}else if(!$customer->ValidatePassword($this->password)){
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		}
 		else{
 
-			
-
-			//Set session
+			//Set Session
 			Yii::app()->session['CusID'] = $customer->CusID;
 			Yii::app()->session['CusName'] = $customer->CusName;
 			Yii::app()->session['CusType'] = $customer->CusType;
@@ -53,19 +50,5 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_NONE;
 		}
 		return !$this->errorCode;
-
-		/*$users=array(
-			// username => password
-			'demo'=>'demo',
-			'admin'=>'admin',
-		);
-		if(!isset($users[$this->username]))
-			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($users[$this->username]!==$this->password)
-			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
-			$this->errorCode=self::ERROR_NONE;
-		return !$this->errorCode;
-		*/
 	}
 }

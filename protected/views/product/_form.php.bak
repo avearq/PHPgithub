@@ -13,10 +13,9 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
-
-	//step 1
+	// step 1
 	'htmlOptions' => array(
-		'encrype' => 'multipart/form-data',
+		'enctype' => 'multipart/form-data',
 	),
 )); ?>
 
@@ -41,20 +40,24 @@
 		<?php echo $form->textField($model,'ProPrice'); ?>
 		<?php echo $form->error($model,'ProPrice'); ?>
 	</div>
-	<!-- Step 2
+
+	<!-- step 2 -->
+	<!--
 	<div class="row">
 		<?php echo $form->labelEx($model,'ProImage'); ?>
 		<?php echo $form->textField($model,'ProImage',array('size'=>60,'maxlength'=>1024)); ?>
 		<?php echo $form->error($model,'ProImage'); ?>
 	</div>
 	-->
-	<!-- Strep 3 -->
+
+	<!-- step 3 -->
 	<div class="row">
 		<?php echo $form->labelEx($model,'ProImage'); ?>
 		<?php echo CHtml::activeFileField($model,'ProImage'); ?>
 		<?php echo $form->error($model,'ProImage'); ?>
 	</div>
-	<!-- Strep 4 -->
+
+	<!-- step 4 -->
 	<?php 
 		if($model->isNewRecord != '1'){
 	?>
@@ -66,16 +69,17 @@
 	<?
 		}
 	?>
-<!--
+
+	<!--
 	<div class="row">
 		<?php echo $form->labelEx($model,'CateID'); ?>
 		<?php echo $form->textField($model,'CateID'); ?>
 		<?php echo $form->error($model,'CateID'); ?>
 	</div>
- -->
+	-->
 	<div class="row">
 		<?php echo $form->labelEx($model,'CateID'); ?>
-		<?php echo $form->dropDownList($model,'CateID',CHtml::ListData(Category::model()->findAll(), 'CateID', 'CateName')); ?>
+		<?php echo $form->dropDownList($model,'CateID', CHtml::ListData(Category::model()->findAll(), '', '')); ?>
 		<?php echo $form->error($model,'CateID'); ?>
 	</div>
 

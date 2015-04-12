@@ -110,6 +110,7 @@ class Customer extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
 	public function ValidatePassword($password){
 		return $this->CusPassword===$password;
 	}

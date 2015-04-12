@@ -26,60 +26,55 @@
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
 
-
 	<div id="mainmenu">
-		<?php 
-		/*$this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		));*/
-
-
-		$CustomerType=Yii::app()->session['CusType'];
-		if($CustomerType ==''){
-			//Guest
+		<?php
+			/*
 			$this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				//array('label'=>'Guest'),
-				array('label'=>'Register', 'url'=>array('/Customer/create')),
-				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				//array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-				
-			),
-		));
-		}else if($CustomerType == '1'){
-			//Administrator
-			$this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				//array('label'=>'Administrator'),
-				array('label'=>'Product Management', 'url'=>array('/Product/admin')),
-				array('label'=>'Category Management', 'url'=>array('/Category/admin')),
-				array('label'=>'Customer Management', 'url'=>array('/Customer/admin')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		));
-		}else{
-			//Customer
-			$this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				//array('label'=>'Customer'),
-				//array('label'=>'Home', 'url'=>array('/site/index')),
-				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				//array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		));
+				'items'=>array(
+					array('label'=>'Home', 'url'=>array('/site/index')),
+					array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+					array('label'=>'Contact', 'url'=>array('/site/contact')),
+					array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+				),
+			)); 
+			*/
 
-		}
+			$CustomerType=Yii::app()->session['CusType'];
+			if($CustomerType==''){
+				//Guest
+				$this->widget('zii.widgets.CMenu',array(
+					'items'=>array(
+						//array('label'=>'Guest'),
+						array('label'=>'Register', 'url'=>array('/Customer/create')),
+						array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+					),
+				));
+			}else if($CustomerType=='1'){
+				//Administrator
+				$this->widget('zii.widgets.CMenu',array(
+					'items'=>array(
+						//array('label'=>'Administrator'),
+						array('label'=>'Order Management', 'url'=>array('/Order/admin')),
+						array('label'=>'Product Management', 'url'=>array('/Product/admin')),
+						array('label'=>'Category Management', 'url'=>array('/Category/admin')),
+						array('label'=>'Customer Management', 'url'=>array('/Customer/admin')),
+						array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+					),
+				));
+			}else{
+				//Customer
+				$this->widget('zii.widgets.CMenu',array(
+					'items'=>array(
+						//array('label'=>'Customer'),
+						array('label'=>'Order Management', 'url'=>array('/Order/admin')),
+						array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+					),
+				));
+			}
 		?>
 
 

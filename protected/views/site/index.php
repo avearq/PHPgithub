@@ -3,7 +3,7 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-<!--Step 1-->
+<!-- Step 1 -->
 <!--
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
@@ -20,17 +20,35 @@ the <a href="http://www.yiiframework.com/doc/">documentation</a>.
 Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
 should you have any questions.</p>
 -->
-
-<!--Step 2-->
+<!-- Step 2 -->
 <h1>Products</h1>
 
+<!-- Step 3-->
 <?php
-	//Step 5
-	$model = new Product();
-	//Step 3
-	$this->widget('zii.widgets.EColumnListView', array(
-	'dataProvider' => $model->customFindAll(),
-	'itemView' => '_view',
-	'columns' => 2
+	/*
+		$categorymodel=Category::model()->with(array(
+				'user'=>array(
+				'select'=>'categoryname',
+				'joinType'=>'INNER JOIN',
+				'condition'=>'user.categoryname="activeuser"',
+			),
+        ))->findAll();
+	*/
+	/*
+	$model = New Product();
+	$this->widget('zii.widgets.CListView', array(
+		'dataProvider'=>$model->customFindAll(),
+		'itemView'=>'_view',
 	));
+	*/
+
+	$model = New Product();
+
+	$this->widget('zii.widgets.EColumnListView', array(
+		'dataProvider' => $model->customFindAll(),
+		'itemView' => '_view',
+		'columns' => 2
+	));
+
 ?>
+
